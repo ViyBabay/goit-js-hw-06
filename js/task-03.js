@@ -13,4 +13,12 @@ const images = [
   },
 ];
 
+const ulRef = document.querySelector(".gallery");
 
+const newGallery = images.reduce(
+  (acc, { url, alt }) =>
+    acc + `<li class="item"><img src="${url}" alt="${alt}"></li>`,
+  ""
+);
+console.log(newGallery);
+ulRef.insertAdjacentHTML("afterbegin", newGallery);
