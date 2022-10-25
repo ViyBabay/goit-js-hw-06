@@ -10,13 +10,6 @@ function handleSubmit(evt) {
     const formData =  { email, password };
 
 
-    // const formData = new FormData(evt.currentTarget);
-    
-    // const {
-    // elements: { email, password }
-    // } = evt.currentTarget;
-    
-
   if (email === "" || password === "") {
     return alert("ALERT! Please fill in all the fields!");
   }
